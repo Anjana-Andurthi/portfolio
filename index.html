@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark" data-palette="sapphire">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjana Andurthi | Aspiring Software Developer Portfolio</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Portfolio of Anjana Andurthi - Aspiring Software Developer, Python Full-Stack & Database Specialist. B.Tech graduate from Vaageswari College of Engineering.">
+  <meta name="keywords" content="Anjana Andurthi, Software Developer, Python, SQL, Streamlit, SQLAlchemy, Portfolio, Fresher, Hyderabad">
+  <meta name="author" content="Anjana Andurthi">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- FontAwesome Icons for dev & tech logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet with Cache Busting -->
+  <link rel="stylesheet" href="style.css?v=20261112_06">
+
+  <!-- ==========================================================================
+       THEME 6: ARCTIC ICE & ROYAL SAPPHIRE OCEAN (GUARANTEED CACHE-FREE INLINE)
+       ========================================================================== -->
+  <style id="uniqueThemeCSS">
+    :root, [data-palette="sapphire"], [data-palette="arctic"] {
+      --bg-body: #050b14;
+      --bg-surface: #0a1324;
+      --bg-card: rgba(14, 25, 48, 0.88);
+      --bg-card-hover: rgba(20, 36, 70, 0.96);
+      --bg-glass: rgba(10, 19, 38, 0.82);
+      --bg-input: rgba(8, 16, 32, 0.95);
+      
+      --border-color: rgba(56, 189, 248, 0.22);
+      --border-focus: rgba(0, 210, 255, 0.7);
+      --border-glow: rgba(56, 189, 248, 0.35);
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --primary: #38bdf8;         /* Arctic Ice Blue */
+      --primary-glow: rgba(56, 189, 248, 0.45);
+      --secondary: #2563eb;       /* Royal Sapphire */
+      --secondary-glow: rgba(37, 99, 235, 0.4);
+      --accent-cyan: #00d2ff;
+      --accent-ice: #e0f2fe;
+      
+      --gradient-brand: linear-gradient(135deg, #00d2ff 0%, #3b82f6 50%, #1d4ed8 100%);
+      --gradient-text: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 45%, #60a5fa 100%);
+      --btn-text: #ffffff;
+      
+      --orb-1: #00d2ff;
+      --orb-2: #2563eb;
+      --orb-3: #1d4ed8;
+    }
+
+    /* Option: Solar Amber Gold */
+    [data-palette="solar"] {
+      --bg-body: #07090e;
+      --bg-surface: #0f121a;
+      --bg-card: rgba(17, 21, 31, 0.88);
+      --bg-card-hover: rgba(26, 32, 48, 0.96);
+      --bg-glass: rgba(15, 18, 26, 0.82);
+      --bg-input: rgba(12, 15, 23, 0.95);
+      --border-color: rgba(245, 158, 11, 0.22);
+      --border-focus: rgba(251, 191, 36, 0.7);
+      --border-glow: rgba(245, 158, 11, 0.35);
+      --primary: #f59e0b;
+      --primary-glow: rgba(245, 158, 11, 0.45);
+      --secondary: #10b981;
+      --gradient-brand: linear-gradient(135deg, #fde047 0%, #f59e0b 50%, #ea580c 100%);
+      --gradient-text: linear-gradient(135deg, #fef08a 0%, #fbbf24 45%, #f97316 100%);
+      --btn-text: #07080a;
+      --orb-1: #f59e0b;
+      --orb-2: #10b981;
+      --orb-3: #f97316;
+    }
+
+    /* Option: Cyber Emerald Mint */
+    [data-palette="emerald"] {
+      --bg-body: #040907;
+      --bg-surface: #091410;
+      --bg-card: rgba(11, 24, 18, 0.88);
+      --bg-card-hover: rgba(17, 36, 28, 0.96);
+      --bg-glass: rgba(9, 20, 16, 0.82);
+      --bg-input: rgba(7, 18, 13, 0.95);
+      --border-color: rgba(16, 185, 129, 0.25);
+      --border-focus: rgba(0, 245, 160, 0.7);
+      --border-glow: rgba(16, 185, 129, 0.35);
+      --primary: #10b981;
+      --primary-glow: rgba(16, 185, 129, 0.45);
+      --secondary: #00f5a0;
+      --gradient-brand: linear-gradient(135deg, #00f5a0 0%, #10b981 50%, #0284c7 100%);
+      --gradient-text: linear-gradient(135deg, #a7f3d0 0%, #34d399 45%, #38bdf8 100%);
+      --btn-text: #040907;
+      --orb-1: #00f5a0;
+      --orb-2: #10b981;
+      --orb-3: #0284c7;
+    }
+
+    /* Option: Crimson Velvet Luxe */
+    [data-palette="crimson"] {
+      --bg-body: #0c060a;
+      --bg-surface: #170d14;
+      --bg-card: rgba(28, 14, 24, 0.88);
+      --bg-card-hover: rgba(42, 20, 36, 0.96);
+      --bg-glass: rgba(23, 13, 20, 0.82);
+      --bg-input: rgba(19, 10, 17, 0.95);
+      --border-color: rgba(244, 63, 94, 0.25);
+      --border-focus: rgba(251, 113, 133, 0.7);
+      --border-glow: rgba(244, 63, 94, 0.35);
+      --primary: #f43f5e;
+      --primary-glow: rgba(244, 63, 94, 0.45);
+      --secondary: #fb7185;
+      --gradient-brand: linear-gradient(135deg, #fda4af 0%, #f43f5e 50%, #e11d48 100%);
+      --gradient-text: linear-gradient(135deg, #fecdd3 0%, #fb7185 45%, #e11d48 100%);
+      --btn-text: #0c060a;
+      --orb-1: #f43f5e;
+      --orb-2: #e11d48;
+      --orb-3: #fb7185;
+    }
+
+    /* Global Direct Theme Overrides */
+    body {
+      background-color: var(--bg-body) !important;
+      color: var(--text-main) !important;
+    }
+    .gradient-text {
+      background: var(--gradient-text) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      display: inline-block;
+    }
+    .btn-gradient {
+      background: var(--gradient-brand) !important;
+      color: var(--btn-text) !important;
+      font-weight: 700 !important;
+      box-shadow: 0 4px 18px var(--primary-glow) !important;
+    }
+    .btn-gradient:hover {
+      box-shadow: 0 8px 25px var(--primary-glow) !important;
+      color: var(--btn-text) !important;
+    }
+    .btn-outline-custom {
+      border: 1.5px solid var(--border-color) !important;
+      color: var(--text-main) !important;
+    }
+    .btn-outline-custom:hover {
+      background: rgba(56, 189, 248, 0.12) !important;
+      border-color: var(--primary) !important;
+      color: var(--primary) !important;
+    }
+    .glass-card {
+      background: var(--bg-card) !important;
+      border: 1px solid var(--border-color) !important;
+    }
+    .glass-card:hover {
+      border-color: var(--border-focus) !important;
+      box-shadow: 0 0 25px var(--primary-glow), 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    }
+    .profile-img-container {
+      background: var(--gradient-brand) !important;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 35px var(--primary-glow) !important;
+    }
+    .education-timeline::before {
+      background: var(--gradient-brand) !important;
+    }
+    .timeline-dot {
+      border: 3px solid var(--primary) !important;
+      box-shadow: 0 0 14px var(--primary-glow) !important;
+    }
+    .brand-code {
+      color: var(--primary) !important;
+    }
+    .stat-num {
+      color: var(--primary) !important;
+    }
+    .orb-1 { background: var(--orb-1) !important; }
+    .orb-2 { background: var(--orb-2) !important; }
+    .orb-3 { background: var(--orb-3) !important; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Animated Lighting Effects -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Navigation Bar (Fixed SPA Header)
+       ========================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom" id="mainNavbar">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="brand-logo" href="#home">
+          <span class="brand-code">&lt;</span>Anjana<span class="brand-code">/&gt;</span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2" style="color: var(--primary);"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1 text-center">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="#home"><i class="bi bi-house-door me-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#about"><i class="bi bi-person me-1"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#education"><i class="bi bi-mortarboard me-1"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#skills"><i class="bi bi-cpu me-1"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#projects"><i class="bi bi-code-square me-1"></i> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#certifications"><i class="bi bi-award me-1"></i> Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#contact"><i class="bi bi-envelope me-1"></i> Contact</a>
+            </li>
+          </ul>
+
+          <!-- Nav Right Action Group -->
+          <div class="d-flex align-items-center justify-content-center gap-3 mt-3 mt-lg-0">
+            <!-- Theme Toggle Button (Dark / Light) -->
+            <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Dark / Light Theme" title="Switch Theme">
+              <i class="bi bi-sun-fill" id="themeIcon"></i>
+            </button>
+
+            <!-- Instant Resume Download Button (Top Navbar) -->
+            <a href="Anjana_Andurthi_Resume.pdf" download="Anjana_Andurthi_Resume.pdf" class="btn btn-gradient btn-download-resume" title="Download Anjana Andurthi's Resume">
+              <i class="bi bi-file-earmark-arrow-down-fill me-1"></i>
+              <span>Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. Hero Section
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Left Content -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <!-- Availability Badge -->
+            <div class="status-badge reveal-fade-up">
+              <span class="status-pulse"></span>
+              <span>Open to Software Developer Roles & Internships</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="hero-heading reveal-fade-up delay-1">
+              Hi, I'm <span class="gradient-text">Anjana Andurthi</span>
+            </h1>
+
+            <!-- Animated Subtitle / Typewriter -->
+            <div class="hero-typewriter-wrap reveal-fade-up delay-2">
+              <span id="typewriterText"></span><span class="cursor-blink"></span>
+            </div>
+
+            <!-- Pitch Description -->
+            <p class="hero-description reveal-fade-up delay-3">
+              Computer Science graduate and proactive team lead passionate about building scalable Python full-stack applications, high-performance database architectures, and intelligent systems. A quick learner dedicated to writing clean, reliable code.
+            </p>
+
+            <!-- Call to Actions -->
+            <div class="hero-actions reveal-fade-up delay-4">
+              <a href="#contact" class="btn btn-gradient">
+                <i class="bi bi-chat-square-text-fill"></i>
+                <span>Get In Touch</span>
+              </a>
+
+              <a href="#projects" class="btn btn-outline-custom">
+                <i class="bi bi-grid-fill"></i>
+                <span>View Projects</span>
+              </a>
+            </div>
+
+            <!-- Social Links & Direct Contacts -->
+            <div class="social-pill-group reveal-fade-up delay-4">
+              <a href="https://www.linkedin.com/in/anjanaandurthi/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Anjana-Andurthi" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:anjanaandurthi@gmail.com" class="social-icon-btn" title="Email: anjanaandurthi@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:8374830613" class="social-icon-btn" title="Phone: +91 8374830613" aria-label="Phone">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Showcase Profile Image (Clean & Unobstructed) -->
+          <div class="col-lg-5">
+            <div class="profile-showcase-wrapper reveal-fade-up delay-2">
+              <div class="profile-img-container">
+                <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='assests/professional photo.jpeg'" alt="Anjana Andurthi - Aspiring Software Developer" class="profile-img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Row -->
+        <div class="row g-3 hero-stats-row reveal-fade-up delay-3">
+          <div class="col-6 col-md-3">
+            <div class="stat-card">
+              <div class="stat-num">8.05</div>
+              <div class="stat-label">B.Tech CGPA</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-card">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">10th (SSC) Score</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-card">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Flagship Projects</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-card">
+              <div class="stat-num">IBM & AINCAT</div>
+              <div class="stat-label">Certified & Recognized</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. About Me Section
+         ========================================================================== -->
+    <section id="about" class="section-wrapper">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-fade-up">
+          <span class="section-badge"><i class="bi bi-person-badge"></i> Professional Summary</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated computer science graduate eager to contribute to impactful software engineering teams.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Main Narrative Card -->
+          <div class="col-lg-7">
+            <div class="glass-card about-card h-100 reveal-fade-up delay-1">
+              <h3 class="fw-bold mb-3" style="color: var(--text-main);">Passionate About Engineering Scalable Python Full-Stack Systems</h3>
+              <p class="about-text">
+                I am deeply fascinated by how Python ties together the complete modern software stack—from architecting normalized relational databases with <strong>MySQL, PostgreSQL, and SQLAlchemy</strong> to building reactive, data-driven web applications and AI-powered interfaces with <strong>Streamlit and modern web tools</strong>.
+              </p>
+              <p class="about-text">
+                As an agile <strong>quick learner</strong>, I rapidly absorb modern frameworks, algorithms, and engineering paradigms. During my academic projects, I demonstrated proven leadership by <strong>leading student engineering teams</strong>—organizing task workflows, conducting code reviews, aligning database schemas, and ensuring on-time project completion.
+              </p>
+
+              <!-- Training Highlight -->
+              <div class="about-highlight-box">
+                <h5><i class="bi bi-patch-check-fill text-primary me-2"></i>Professional Training at Codegnan</h5>
+                <p>Completed intensive training in <strong>Python Full Stack with DSA and Generative AI</strong>, covering advanced data structures, OOP design patterns, modern web technologies, and generative AI foundations.</p>
+              </div>
+
+              <!-- Quick Info Pills -->
+              <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-muted">
+                    <i class="bi bi-geo-alt-fill text-danger fs-5"></i>
+                    <span><strong>Location:</strong> Hyderabad | Native: Korutla</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-muted">
+                    <i class="bi bi-laptop-fill text-info fs-5"></i>
+                    <span><strong>Availability:</strong> Full-Time / Immediate Joiner</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-muted">
+                    <i class="bi bi-envelope-check-fill text-success fs-5"></i>
+                    <span><strong>Email:</strong> anjanaandurthi@gmail.com</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center gap-2 text-muted">
+                    <i class="bi bi-telephone-inbound-fill text-warning fs-5"></i>
+                    <span><strong>Contact:</strong> +91 8374830613</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Core Pillars Grid -->
+          <div class="col-lg-5">
+            <div class="row g-3 h-100">
+              <div class="col-sm-6">
+                <div class="key-attribute-card reveal-fade-up delay-1">
+                  <div class="attribute-icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <h4 class="attribute-title">Python Full Stack & DSA</h4>
+                  <p class="attribute-desc">Strong grasp of OOP principles, data structures, clean MVC architecture, and full-stack development.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="key-attribute-card reveal-fade-up delay-2">
+                  <div class="attribute-icon">
+                    <i class="fa-solid fa-database"></i>
+                  </div>
+                  <h4 class="attribute-title">Database & Analytics</h4>
+                  <p class="attribute-desc">Proficient in MySQL, PostgreSQL, SQLite, complex SQL analytical queries, and SQLAlchemy ORM.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="key-attribute-card reveal-fade-up delay-3">
+                  <div class="attribute-icon">
+                    <i class="fa-solid fa-users-gear"></i>
+                  </div>
+                  <h4 class="attribute-title">Team Leadership</h4>
+                  <p class="attribute-desc">Led student teams in academic projects, coordinating task roadmaps, code integration, and milestone reviews.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="key-attribute-card reveal-fade-up delay-4">
+                  <div class="attribute-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                  </div>
+                  <h4 class="attribute-title">Quick Learner & Agile</h4>
+                  <p class="attribute-desc">Fast-paced learner trained in Generative AI, NLP TF-IDF, and modern tooling via Codegnan & IBM.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. Education Section (3 Milestones: B.Tech, Inter, 10th)
+         ========================================================================== -->
+    <section id="education" class="section-wrapper">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-fade-up">
+          <span class="section-badge"><i class="bi bi-mortarboard-fill"></i> Academic Journey</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Consistent academic record demonstrating discipline, analytical aptitude, and continuous technical growth.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- 1. B.Tech -->
+          <div class="timeline-item reveal-fade-up delay-1">
+            <div class="timeline-dot"></div>
+            <div class="glass-card education-card">
+              <div class="edu-header-row">
+                <div>
+                  <h3 class="edu-degree">B.Tech – Computer Science and Engineering</h3>
+                  <div class="edu-institution">
+                    <i class="bi bi-building"></i> Vaageswari College of Engineering, Karimnagar
+                  </div>
+                </div>
+                <div class="edu-score-pill">
+                  <i class="bi bi-award-fill me-1"></i> CGPA: 8.05 / 10
+                </div>
+              </div>
+              <div class="edu-year-badge">
+                <i class="bi bi-calendar3"></i> 2022 – 2026 | Graduation Year: 2026
+              </div>
+              <p class="edu-details">
+                Comprehensive study in core Computer Science subjects including Object-Oriented Programming (OOP), Database Management Systems (DBMS), Data Structures & Algorithms (DSA), Operating Systems, and Software Engineering. Active in technical seminars, coding challenges, and hands-on system development projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Intermediate -->
+          <div class="timeline-item reveal-fade-up delay-2">
+            <div class="timeline-dot"></div>
+            <div class="glass-card education-card">
+              <div class="edu-header-row">
+                <div>
+                  <h3 class="edu-degree">Intermediate – MPC (Mathematics, Physics, Chemistry)</h3>
+                  <div class="edu-institution">
+                    <i class="bi bi-building"></i> Maastro Girls Junior College, Korutla
+                  </div>
+                </div>
+                <div class="edu-score-pill">
+                  <i class="bi bi-graph-up-arrow me-1"></i> 87% Marks
+                </div>
+              </div>
+              <div class="edu-year-badge">
+                <i class="bi bi-calendar3"></i> 2020 – 2022
+              </div>
+              <p class="edu-details">
+                Built a solid mathematical and analytical foundation focusing on calculus, algebra, and logical reasoning, preparing for rigorous algorithmic and software engineering principles.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. 10th (SSC) -->
+          <div class="timeline-item reveal-fade-up delay-3">
+            <div class="timeline-dot"></div>
+            <div class="glass-card education-card">
+              <div class="edu-header-row">
+                <div>
+                  <h3 class="edu-degree">Secondary School Certificate (SSC / 10th)</h3>
+                  <div class="edu-institution">
+                    <i class="bi bi-building"></i> Little Flower High School, Korutla
+                  </div>
+                </div>
+                <div class="edu-score-pill gold">
+                  <i class="bi bi-star-fill me-1"></i> Perfect 100% Score (10.0 GPA)
+                </div>
+              </div>
+              <div class="edu-year-badge">
+                <i class="bi bi-calendar3"></i> Completed in 2020
+              </div>
+              <p class="edu-details">
+                Achieved a flawless 100% aggregate score (GPA 10.0 / 10.0), reflecting exceptional dedication, consistent academic excellence, and strong discipline from early education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. Technical Skills Section
+         ========================================================================== -->
+    <section id="skills" class="section-wrapper">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-fade-up">
+          <span class="section-badge"><i class="bi bi-tools"></i> Technical Arsenal</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+          <p class="section-subtitle">A well-rounded toolkit spanning programming languages, web development, relational databases, and AI fundamentals.</p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="skill-filter-container reveal-fade-up delay-1">
+          <button type="button" class="skill-filter-btn active" data-filter="all">All Skills</button>
+          <button type="button" class="skill-filter-btn" data-filter="languages">Programming</button>
+          <button type="button" class="skill-filter-btn" data-filter="web">Web & Frameworks</button>
+          <button type="button" class="skill-filter-btn" data-filter="databases">Databases & ORM</button>
+          <button type="button" class="skill-filter-btn" data-filter="core-ai">Core CS & AI/ML</button>
+          <button type="button" class="skill-filter-btn" data-filter="tools">Tools & DevOps</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="row g-4" id="skillsGrid">
+          <!-- 1. Languages -->
+          <div class="col-md-6 col-lg-4 skill-category-col" data-category="languages">
+            <div class="glass-card skill-category-card reveal-fade-up delay-1">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+                <h3 class="category-title">Programming Languages</h3>
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-chip"><i class="fa-brands fa-python text-warning"></i> Python</span>
+                <span class="skill-chip"><i class="fa-solid fa-database text-info"></i> SQL</span>
+                <span class="skill-chip"><i class="fa-solid fa-c text-primary"></i> C Language</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Web Technologies -->
+          <div class="col-md-6 col-lg-4 skill-category-col" data-category="web">
+            <div class="glass-card skill-category-card reveal-fade-up delay-2">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3 class="category-title">Web Technologies</h3>
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-chip"><i class="fa-brands fa-html5 text-danger"></i> HTML5</span>
+                <span class="skill-chip"><i class="fa-brands fa-css3-alt text-primary"></i> CSS3</span>
+                <span class="skill-chip"><i class="fa-brands fa-bootstrap text-purple" style="color: #8b5cf6;"></i> Bootstrap 5</span>
+                <span class="skill-chip"><i class="fa-brands fa-js text-warning"></i> JavaScript</span>
+                <span class="skill-chip"><i class="bi bi-lightning-charge-fill text-danger"></i> Streamlit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Databases & ORM -->
+          <div class="col-md-6 col-lg-4 skill-category-col" data-category="databases">
+            <div class="glass-card skill-category-card reveal-fade-up delay-3">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-server"></i></div>
+                <h3 class="category-title">Databases & ORM</h3>
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-chip"><i class="fa-solid fa-database text-primary"></i> MySQL</span>
+                <span class="skill-chip"><i class="fa-solid fa-layer-group text-info"></i> SQLAlchemy</span>
+                <span class="skill-chip"><i class="fa-solid fa-feather-pointed text-warning"></i> SQLite</span>
+                <span class="skill-chip"><i class="fa-solid fa-cubes text-info"></i> PostgreSQL</span>
+                <span class="skill-chip"><i class="bi bi-file-earmark-spreadsheet text-success"></i> Relational Modeling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Core CS -->
+          <div class="col-md-6 col-lg-4 skill-category-col" data-category="core-ai">
+            <div class="glass-card skill-category-card reveal-fade-up delay-1">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3 class="category-title">Core Computer Science</h3>
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-chip"><i class="bi bi-diagram-3-fill text-primary"></i> OOP Concepts</span>
+                <span class="skill-chip"><i class="bi bi-hdd-network-fill text-success"></i> DBMS</span>
+                <span class="skill-chip"><i class="bi bi-bezier2 text-info"></i> Data Structures</span>
+                <span class="skill-chip"><i class="bi bi-gear-wide-connected text-warning"></i> Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. AI & ML Fundamentals -->
+          <div class="col-md-6 col-lg-4 skill-category-col" data-category="core-ai">
+            <div class="glass-card skill-category-card reveal-fade-up delay-2">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3 class="category-title">AI & Machine Learning</h3>
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-chip"><i class="bi bi-chat-quote-fill text-primary"></i> Natural Language Processing (NLP)</span>
+                <span class="skill-chip"><i class="bi bi-search text-info"></i> TF-IDF Vectorization</span>
+                <span class="skill-chip"><i class="bi bi-robot text-warning"></i> ML Fundamentals</span>
+                <span class="skill-chip"><i class="bi bi-stars text-danger"></i> Generative AI Basics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Tools & Practices -->
+          <div class="col-md-6 col-lg-4 skill-category-col" data-category="tools">
+            <div class="glass-card skill-category-card reveal-fade-up delay-3">
+              <div class="category-header">
+                <div class="category-icon"><i class="fa-solid fa-toolbox"></i></div>
+                <h3 class="category-title">Developer Tools</h3>
+              </div>
+              <div class="skill-pills-wrap">
+                <span class="skill-chip"><i class="fa-brands fa-git-alt text-danger"></i> Git</span>
+                <span class="skill-chip"><i class="fa-brands fa-github text-white"></i> GitHub</span>
+                <span class="skill-chip"><i class="bi bi-terminal-fill text-info"></i> VS Code</span>
+                <span class="skill-chip"><i class="bi bi-shield-lock-fill text-success"></i> Cybersecurity Basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Featured Projects Section
+         ========================================================================== -->
+    <section id="projects" class="section-wrapper">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-fade-up">
+          <span class="section-badge"><i class="bi bi-code-slash"></i> Practical Implementations</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications showcasing database engineering, full-stack prototyping, and applied artificial intelligence.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: IT Helpdesk Ticket Management System -->
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card project-card reveal-fade-up delay-1">
+              <div class="project-top-bar">
+                <span class="project-date-pill"><i class="bi bi-calendar-event"></i> October 2026</span>
+                <span class="project-category-tag">Database & Web</span>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title">IT Helpdesk Ticket Management System</h3>
+                <p class="project-desc">
+                  An enterprise support ticket resolution ecosystem enabling employees to submit IT support requests, monitor ticket status in real-time, and streamline administrative resolutions.
+                </p>
+
+                <ul class="project-points-list">
+                  <li>Engineered role-based access for employees and support agents with dynamic status updates.</li>
+                  <li>Implemented high-performance SQL analytics for agent workloads, department-wise distribution, recurring issues, and SLA metrics.</li>
+                  <li>Structured relational database schemas with indexing and constraints to facilitate swift queries and administrative reporting.</li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">SQL Analytics</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline-custom w-100" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                  <i class="bi bi-info-circle me-1"></i> Project Details
+                </button>
+                <a href="https://github.com/Anjana-Andurthi/IT-Helpdesk-Ticket-Management-System" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="View IT Helpdesk on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Smart Memory Vault -->
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card project-card reveal-fade-up delay-2">
+              <div class="project-top-bar">
+                <span class="project-date-pill"><i class="bi bi-calendar-event"></i> September 2026</span>
+                <span class="project-category-tag">AI & Knowledge Base</span>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title">Smart Memory Vault – AI-Powered Memory</h3>
+                <p class="project-desc">
+                  An intelligent knowledge-management application that stores, organizes, and retrieves structured/unstructured information with semantic AI retrieval.
+                </p>
+
+                <ul class="project-points-list">
+                  <li>Built a centralized knowledge vault allowing users to save and categorize notes, snippets, and documents.</li>
+                  <li>Integrated NLP TF-IDF vector-based search to deliver fast, highly relevant search results across stored memories.</li>
+                  <li>Leveraged SQLAlchemy ORM with multi-database compatibility (SQLite & PostgreSQL) for flexible and reliable persistent storage.</li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">SQLAlchemy</span>
+                  <span class="tech-tag">SQLite / Postgres</span>
+                  <span class="tech-tag">TF-IDF / NLP</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline-custom w-100" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                  <i class="bi bi-info-circle me-1"></i> Project Details
+                </button>
+                <a href="https://github.com/Anjana-Andurthi/Smart-memory-vault-Project" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="View Smart Memory Vault on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: ML Chatbot for Disease Detection -->
+          <div class="col-lg-4 col-md-6">
+            <div class="glass-card project-card reveal-fade-up delay-3">
+              <div class="project-top-bar">
+                <span class="project-date-pill"><i class="bi bi-stars"></i> Health Tech AI</span>
+                <span class="project-category-tag">Machine Learning</span>
+              </div>
+
+              <div class="project-body">
+                <h3 class="project-title">ML Chatbot for Disease Detection</h3>
+                <p class="project-desc">
+                  An interactive, conversational healthcare prediction assistant that analyzes patient-reported symptoms and suggests probable conditions alongside preventive advice.
+                </p>
+
+                <ul class="project-points-list">
+                  <li>Engineered natural language symptom parsing to identify medical conditions accurately from natural conversational input.</li>
+                  <li>Trained classification algorithms on multi-symptom datasets to predict risk levels and recommend doctor specializations.</li>
+                  <li>Crafted a responsive user interface with dynamic questionnaire flows, symptom search, and precautionary guidance.</li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Machine Learning</span>
+                  <span class="tech-tag">NLP</span>
+                  <span class="tech-tag">Streamlit</span>
+                  <span class="tech-tag">Scikit-Learn</span>
+                </div>
+              </div>
+
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline-custom w-100" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                  <i class="bi bi-info-circle me-1"></i> Project Details
+                </button>
+                <a href="https://github.com/Anjana-Andurthi" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Certifications & Achievements Section
+         ========================================================================== -->
+    <section id="certifications" class="section-wrapper">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-fade-up">
+          <span class="section-badge"><i class="bi bi-award-fill"></i> Credentials & Milestones</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">Verified industry credentials, competitive assessments, and professional development programs.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- IBM SkillsBuild -->
+          <div class="col-md-4">
+            <div class="glass-card cert-card reveal-fade-up delay-1">
+              <div class="cert-icon-box ibm">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="cert-content">
+                <h4>IBM SkillsBuild – Cybersecurity</h4>
+                <div class="cert-issuer">IBM SkillsBuild Credential</div>
+                <p class="cert-desc">
+                  Mastered core concepts of threat identification, secure data transmission, network vulnerabilities, access control mechanisms, and digital safety standards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- AINCAT 2025 -->
+          <div class="col-md-4">
+            <div class="glass-card cert-card reveal-fade-up delay-2">
+              <div class="cert-icon-box achievement">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div class="cert-content">
+                <h4>Participated in AINCAT 2025</h4>
+                <div class="cert-issuer">All India National Competitive Assessment</div>
+                <p class="cert-desc">
+                  Successfully took part in the prestigious nationwide technical and quantitative assessment evaluating logical reasoning, algorithmic problem-solving, and computer science proficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Codegnan Training -->
+          <div class="col-md-4">
+            <div class="glass-card cert-card reveal-fade-up delay-3">
+              <div class="cert-icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="cert-content">
+                <h4>Python Full Stack with DSA & GenAI</h4>
+                <div class="cert-issuer">Codegnan Professional Training</div>
+                <p class="cert-desc">
+                  Rigorous hands-on training spanning advanced Python, Data Structures & Algorithms, modern frontend & backend architectures, and practical Generative AI fundamentals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. Contact Section (Direct Connectivity + Form)
+         ========================================================================== -->
+    <section id="contact" class="section-wrapper">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header reveal-fade-up">
+          <span class="section-badge"><i class="bi bi-send-fill"></i> Get in Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">I am actively interviewing for entry-level Software Developer and Python Full-Stack roles. Reach out anytime!</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left: Contact Details Cards -->
+          <div class="col-lg-5">
+            <div class="glass-card contact-info-card h-100 reveal-fade-up delay-1">
+              <h3 class="contact-card-title"><i class="bi bi-person-lines-fill text-primary"></i> Contact Information</h3>
+              <p class="contact-card-desc">Feel free to connect directly through any of the channels below.</p>
+
+              <!-- Email Item -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-method-label">Email Address</div>
+                  <a href="mailto:anjanaandurthi@gmail.com" class="contact-method-value">anjanaandurthi@gmail.com</a>
+                </div>
+                <button type="button" class="copy-btn" onclick="copyToClipboard('anjanaandurthi@gmail.com', 'Email')" title="Copy Email">
+                  <i class="bi bi-clipboard"></i>
+                </button>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-method-label">Mobile Number</div>
+                  <a href="tel:8374830613" class="contact-method-value">+91 8374830613</a>
+                </div>
+                <button type="button" class="copy-btn" onclick="copyToClipboard('8374830613', 'Phone Number')" title="Copy Phone Number">
+                  <i class="bi bi-clipboard"></i>
+                </button>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-method-label">LinkedIn Profile</div>
+                  <a href="https://www.linkedin.com/in/anjanaandurthi/" target="_blank" rel="noopener noreferrer" class="contact-method-value">linkedin.com/in/anjanaandurthi</a>
+                </div>
+                <a href="https://www.linkedin.com/in/anjanaandurthi/" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open LinkedIn">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-method-label">GitHub Repository</div>
+                  <a href="https://github.com/Anjana-Andurthi" target="_blank" rel="noopener noreferrer" class="contact-method-value">github.com/Anjana-Andurthi</a>
+                </div>
+                <a href="https://github.com/Anjana-Andurthi" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open GitHub">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+
+              <!-- Location Item -->
+              <div class="contact-method-item mb-0">
+                <div class="contact-method-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-method-label">Current & Native Location</div>
+                  <div class="contact-method-value">Hyderabad | Native: Korutla</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="col-lg-7">
+            <div class="glass-card contact-form-card h-100 reveal-fade-up delay-2">
+              <h3 class="contact-card-title"><i class="bi bi-chat-left-dots-fill text-info"></i> Send a Direct Message</h3>
+              <p class="contact-card-desc">Have an opportunity, interview call, or project inquiry? Drop me a message below.</p>
+
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="formName" class="form-label-custom"><i class="bi bi-person-fill text-primary me-1"></i> Your Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-custom" id="formName" placeholder="e.g. Anjana Andurthi" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="formEmail" class="form-label-custom"><i class="bi bi-envelope-at-fill text-primary me-1"></i> Your Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control form-control-custom" id="formEmail" placeholder="e.g. anjanaandurthi@gmail.com" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="formSubject" class="form-label-custom"><i class="bi bi-chat-text-fill text-primary me-1"></i> Subject</label>
+                    <input type="text" class="form-control form-control-custom" id="formSubject" placeholder="e.g. Interview Opportunity / Collaboration">
+                  </div>
+                  <div class="col-12">
+                    <label for="formMessage" class="form-label-custom"><i class="bi bi-pencil-square text-primary me-1"></i> Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control form-control-custom" id="formMessage" rows="5" placeholder="Hi Anjana, we came across your portfolio and would love to speak with you regarding..." required></textarea>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-gradient w-100 py-3">
+                      <i class="bi bi-send-fill me-2"></i> Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Project Details Modals
+       ========================================================================== -->
+  <!-- Modal 1: IT Helpdesk Ticket Management System -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <h4 class="modal-title fw-bold" id="modalLabel1">IT Helpdesk Ticket Management System</h4>
+            <span class="badge bg-primary mt-1">Python • Streamlit • MySQL • SQL Analytics</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <h5 class="fw-bold mb-2 text-info">Project Overview</h5>
+          <p class="text-muted">
+            The IT Helpdesk Ticket Management System is designed to solve operational bottlenecks within organizations by providing a centralized web portal where employees can log hardware, software, and network issues.
+          </p>
+
+          <h5 class="fw-bold mb-2 text-info mt-4">Key Technical Architectural Highlights</h5>
+          <ul class="text-muted ps-3">
+            <li class="mb-2"><strong>Role-Based Authentication:</strong> Separate portals for regular employees to create & track tickets, and support agents/admins to assign, prioritize, and resolve them.</li>
+            <li class="mb-2"><strong>SQL Analytical Engine:</strong> Crafted complex aggregation queries and window functions to compute metrics such as Mean Time to Resolution (MTTR), SLA compliance rates, department-wise ticket distribution, and recurring issue patterns.</li>
+            <li class="mb-2"><strong>Relational Integrity:</strong> Designed normalized schemas in MySQL with foreign key constraints, indexes on status and timestamp columns for fast query execution, and audit trail logs.</li>
+            <li class="mb-2"><strong>Streamlit Frontend:</strong> Responsive and reactive user interface built purely in Python, allowing rapid prototyping and immediate data synchronization.</li>
+          </ul>
+
+          <h5 class="fw-bold mb-2 text-info mt-4">Technologies Used</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="tech-tag">Python 3.x</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">MySQL Server</span>
+            <span class="tech-tag">PyMySQL / Connector</span>
+            <span class="tech-tag">SQL Analytics & Aggregation</span>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer-custom">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/Anjana-Andurthi/IT-Helpdesk-Ticket-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-gradient">
+            <i class="fa-brands fa-github me-1"></i> View Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Smart Memory Vault -->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <h4 class="modal-title fw-bold" id="modalLabel2">Smart Memory Vault – AI-Powered Memory</h4>
+            <span class="badge bg-info text-dark mt-1">Python • Streamlit • SQLAlchemy • TF-IDF NLP</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <h5 class="fw-bold mb-2 text-info">Project Overview</h5>
+          <p class="text-muted">
+            Smart Memory Vault functions as an intelligent personal knowledge second-brain, storing technical snippets, research articles, and notes while offering lightning-fast semantic retrieval via natural language processing.
+          </p>
+
+          <h5 class="fw-bold mb-2 text-info mt-4">Key Technical Architectural Highlights</h5>
+          <ul class="text-muted ps-3">
+            <li class="mb-2"><strong>TF-IDF Vector Search:</strong> Implemented Term Frequency-Inverse Document Frequency (TF-IDF) vectorization and cosine similarity calculations to surface relevant notes even with fuzzy keyword matches.</li>
+            <li class="mb-2"><strong>Automatic Text Categorization:</strong> Analyzes input text to suggest matching topics, tags, and categories automatically.</li>
+            <li class="mb-2"><strong>SQLAlchemy ORM Integration:</strong> Utilized object-relational mapping to abstract database operations, allowing flexible deployment over local SQLite or enterprise PostgreSQL.</li>
+            <li class="mb-2"><strong>Interactive Dashboard:</strong> Features note creation, rich markdown rendering, tag filtering, and instant search queries.</li>
+          </ul>
+
+          <h5 class="fw-bold mb-2 text-info mt-4">Technologies Used</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">SQLAlchemy</span>
+            <span class="tech-tag">SQLite / PostgreSQL</span>
+            <span class="tech-tag">Scikit-Learn (TF-IDF)</span>
+            <span class="tech-tag">NLP Preprocessing</span>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer-custom">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/Anjana-Andurthi/Smart-memory-vault-Project" target="_blank" rel="noopener noreferrer" class="btn btn-gradient">
+            <i class="fa-brands fa-github me-1"></i> View Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Machine Learning Chatbot for Disease Detection -->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <div>
+            <h4 class="modal-title fw-bold" id="modalLabel3">Machine Learning Chatbot for Disease Detection</h4>
+            <span class="badge bg-warning text-dark mt-1">Python • ML Classification • NLP • Streamlit</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-custom">
+          <h5 class="fw-bold mb-2 text-info">Project Overview</h5>
+          <p class="text-muted">
+            A conversational healthcare AI chatbot designed to bridge the gap between initial patient concern and medical consultation by analyzing reported symptoms through trained machine learning models.
+          </p>
+
+          <h5 class="fw-bold mb-2 text-info mt-4">Key Technical Architectural Highlights</h5>
+          <ul class="text-muted ps-3">
+            <li class="mb-2"><strong>Symptom Keyword Extraction:</strong> NLP preprocessing pipelines that tokenize, remove stopwords, and match user conversational phrases with known clinical symptoms.</li>
+            <li class="mb-2"><strong>Supervised ML Classification:</strong> Trained models (e.g., Decision Trees / Random Forests) mapping combinations of symptoms to candidate health conditions.</li>
+            <li class="mb-2"><strong>Risk & Precaution Advisory:</strong> Automatically presents precautionary lifestyle steps, severity warnings, and recommends relevant medical specialists.</li>
+            <li class="mb-2"><strong>User Experience & Safety:</strong> Clear disclaimers stating that suggestions are educational aids rather than official clinical diagnoses.</li>
+          </ul>
+
+          <h5 class="fw-bold mb-2 text-info mt-4">Technologies Used</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Streamlit</span>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer-custom">
+          <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/Anjana-Andurthi" target="_blank" rel="noopener noreferrer" class="btn btn-gradient">
+            <i class="fa-brands fa-github me-1"></i> View Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-center text-md-start">
+          <a class="brand-logo justify-content-center justify-content-md-start" href="#home">
+            <span class="brand-code">&lt;</span>Anjana<span class="brand-code">/&gt;</span>
+          </a>
+          <p class="footer-text mt-1">Aspiring Software Developer | Python & SQL Specialist</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://www.linkedin.com/in/anjanaandurthi/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Anjana-Andurthi" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:anjanaandurthi@gmail.com" class="social-icon-btn" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:8374830613" class="social-icon-btn" title="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center text-md-end">
+          <p class="footer-text mb-0">&copy; 2026 Anjana Andurthi. All rights reserved.</p>
+          <small class="text-dim">Crafted with HTML5, CSS3, Bootstrap 5 & Passion</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle with Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Script with Cache Busting -->
+  <script src="script.js?v=20261112_06"></script>
+</body>
+</html>
+
